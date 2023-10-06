@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- font awesome link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>
+    Site
+  </title>
+</head>
+
+<body>
+  <section class="contact">
+    <div class="container">
+      <img src="/images/logo.svg" alt="" class="logo">
+      <div class="wrapper uns">
+        <form action="get" class="contact__form">
+          <h1 class="contact__title">Info</h1>
+          <div class="contact__input-box info">
+            <input type="text" placeholder="Name" id="name" required minlength="6" maxlength="15">
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="text" placeholder="Surname" id="surname" required>
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="email" placeholder="Email" id="email" required>
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="number" placeholder="Age" id="age" required>
+          </div>
+
+          <div class="contact__remember">
+            <label for="remember">
+              <input type="checkbox" class="remember"> Do you like dogs?
+            </label>
+            <label class="contact__label" for="yes">Yes
+              <input type="radio" value="Yes" id="yes">
+            </label>
+            <label class="contact__label" for="no">No
+              <input type="radio" value="No" id="no">
+            </label>
+            <label class="contact__label" for="wtf">WTF?
+              <input type="radio" value="WTF?" id="wtf">
+            </label>
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="file" id="file">
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="hidden" id="hidden">
+          </div>
+          
+          <div class="contact__input-box info">
+            <input type="image" id="image">
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="date" id="date">
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="datetime" id="datetime">
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="range" id="range">
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="search" id="search" placeholder="search">
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="tel" id="tel" placeholder="telephone">
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="url" id="url" placeholder="url">
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="month" id="month">
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="week" id="week">
+          </div>
+
+          <div class="contact__input-box info">
+            <input type="reset" id="reset">
+          </div>
+          <button type="submit" class="btn second">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
