@@ -20,11 +20,13 @@
 <body>
   <section class="contact">
     <div class="container">
+      <!--Неккорректный линк-->
       <img src="/images/logo.svg" alt="" class="logo">
       <div class="wrapper uns">
         <form action="get" class="contact__form">
           <h1 class="contact__title">Info</h1>
           <div class="contact__input-box info">
+            <!--Отсутствует label И не только здесь-->
             <input type="text" placeholder="Name" id="name" required minlength="6" maxlength="15">
           </div>
 
@@ -41,6 +43,7 @@
           </div>
 
           <div class="contact__remember">
+            <!--Некорректное значение в remember-->
             <label for="remember">
               <input type="checkbox" class="remember"> Do you like dogs?
             </label>
@@ -64,6 +67,7 @@
           </div>
           
           <div class="contact__input-box info">
+            <!--Тут необходим атрибут alt-->
             <input type="image" id="image">
           </div>
 
@@ -72,6 +76,7 @@
           </div>
 
           <div class="contact__input-box info">
+            <!--Некорректный тип-->
             <input type="datetime" id="datetime">
           </div>
 
