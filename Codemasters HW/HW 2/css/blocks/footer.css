@@ -1,0 +1,22 @@
+.brand-logo{}
+.brand-logo p{
+margin-bottom: 2rem;
+}
+.brand-logo i{
+  padding-right: 0.4rem;
+}
+.wrapper__footer{
+  background-color: var(--mdn-color-dark-grey);
+
+}
+.footer__container{
+padding: 2rem;
+}
+.footer-nav-container{
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--light-color);
+}
+.footer-nav-elem{
+  padding: 0.4rem;
+  font-size: var(--type-smaller-font-size);
+}

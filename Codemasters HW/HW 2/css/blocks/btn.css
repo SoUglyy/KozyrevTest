@@ -1,0 +1,33 @@
+.btn{
+  border-radius: 1rem;
+  width: 5rem;
+  background-color: var(--main-color);
+  border-color: var( --light-color-primary);
+  color:var( --light-color-primary);
+}
+.signup-but{
+  padding: 0.5rem 0.9rem;
+  border-radius: 5px;
+  font-size:0.8rem;
+}
+.language-btn{
+  color: var(--light-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: small;
+}
+.filter-btn {
+  border-radius: 1rem;
+  background-color: var(--main-color);
+  border-color: var( --light-color-primary);
+  color:var( --light-color-primary);
+  padding: 0.5rem;
+  width: 5rem;
+}
+.search-btn{
+  padding: 0.3rem;
+  width: 4rem;
+}
+.search-btn span{
+  color: var(--mdn-color); 
+}

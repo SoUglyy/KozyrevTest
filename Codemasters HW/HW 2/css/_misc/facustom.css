@@ -1,0 +1,17 @@
+.fa-sharp{
+  color:var( --light-color);
+  padding-right: 0.3rem;
+}
+.fa-moon{
+  padding-right: 0.3rem;
+}
+.fa-globe{
+  padding-right: 0.35rem;
+}
+.fa-magnifying-glass{
+  padding-left: 0.8rem;
+  color:var( --light-color);
+}
+.fa-m{
+  color: var(--mdn-color);
+}

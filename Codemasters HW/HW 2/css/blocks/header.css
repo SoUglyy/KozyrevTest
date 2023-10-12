@@ -1,0 +1,33 @@
+.top-nav{
+  border-bottom: 1px solid var(--border-color);
+}
+.nav-left{
+  margin: 0 0.2rem;
+}
+.header-nav-elem{
+  padding: 0.8rem;
+}
+.logo-but{
+  color:#fff;
+}
+
+.logo-but::after{
+  content: '_';
+  color:var(--mdn-color);
+  font-weight: bolder;
+}
+
+.bottom-nav__actions{
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.6rem;
+  padding: 0.3rem;
+  
+}
+.bottom-nav{
+  border-bottom: 1px solid var(--border-color);
+
+}
+
+
+

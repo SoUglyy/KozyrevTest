@@ -1,0 +1,10 @@
+.navigation-container{
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+.navigation__element{
+  color:var(--light-color);
+  text-decoration: none;
+  font-weight: 300;
+}

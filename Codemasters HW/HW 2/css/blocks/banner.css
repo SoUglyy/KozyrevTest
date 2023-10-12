@@ -1,0 +1,20 @@
+.wrapper_banner{
+  border-bottom: 1px solid var(--border-color);
+}
+.banner{
+  justify-content: center;
+  padding: 1rem;
+ 
+}
+.banner-descr{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+.active{
+  color:#AE8AFF;
+  margin: 0 0.2rem;
+}
+.active:hover{
+  text-decoration:underline;
+}
