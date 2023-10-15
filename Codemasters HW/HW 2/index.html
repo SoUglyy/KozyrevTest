@@ -33,16 +33,32 @@
   <div class="wrapper">
     <div class="wrapper_banner grey-color">
       <div class="container">
+        <!--Выглядит так, что тут излишняя вложенность, мне кажется тут можно всё в 1-2 блока уместить.-->
+        <!-- Так же вижу проблемы наименованием классов. grey-color не может быть названием блока + слишком много блоков, вместо элементов
+            например, banner-descr - блок (судя по названию), а можно сделать элементом  (banner__descr). Такие проблемы наблюдаются не только здесь. Нужно пройтись по коду и пофиксить такие места
+        -->
         <div class="banner row ">
           <a href="#" class="banner-descr">Get real-time assistance with your coding queries. Try <a href="#"
               class="banner-descr active">AI Help</a> now!</a>
         </div>
       </div>
     </div>
+
+    <!--Вот пример как можно переписать чтобы код был корректным с точки зрения БЭМа-->
+<!--    <div class="wrapper__banner row banner">-->
+<!--        <a href="#" class="banner__description link">Get real-time assistance with your coding queries. Try-->
+<!--          <a href="#"class="banner__description link">AI Help</a>-->
+<!--          now!-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
+
+
     <header class="wrapper__header top-nav">
       <div class="container">
         <nav class="navigation">
           <div class="navigation-container ff row">
+            <!-- Вот например тут 3 блока, хотя можно обойтись одним и сделать nav-left модификатором этого блока-->
             <div class="nav header-nav nav-left">
               <i class="fa-sharp fa-solid fa-m"></i>
               <a href="#" class="navigation__element  header-nav-elem logo-but">mdn web docs</a>
@@ -77,6 +93,7 @@
       <div class="container">
         <div class="content-part-container row">
           <aside class="content-part-sidebar">
+            <!--Вот тут нет блока, но правильно то, что container является элементом блока-->
             <div class="sidebar__container column">
               <button type="button" class="btn filter-btn"><i
                   class="fa-sharp fa-solid fa-filter fa-xs"></i>Filter</button>
@@ -185,6 +202,7 @@
               <a href="#" class="navigation__element footer-nav-elem">Blog</a>
             </div>
           </div>
+          <!--Тут IDE ругается, что отсутствует закрывающий div-->
     </footer>
   </div>
 </body>
