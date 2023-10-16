@@ -1,0 +1,14 @@
+.breadcrumbs__actions{
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.6rem;
+  padding: 0.3rem;
+  
+}
+.breadcrumbs--bordered{
+  border-top: 1px solid var(--border-color);
+}
+.breadcrumbs__element{
+  color:var(--light-color);
+  font-weight: 300;
+}

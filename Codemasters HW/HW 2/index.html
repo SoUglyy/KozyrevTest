@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>MDN</title>
   <!-- css files link  -->
-
+  <link rel="stylesheet" href="../HW 2/css/blocks/burger.css">
   <link rel="stylesheet" href="../HW 2/css/_misc/layout.css">
   <link rel="stylesheet" href="../HW 2/css/_misc/facustom.css">
   <link rel="stylesheet" href="../HW 2/css/_misc/animations.css">
@@ -15,13 +15,15 @@
   <link rel="stylesheet" href="../HW 2/css/_misc/normalize.css">
   <link rel="stylesheet" href="../HW 2/css/widgets/main.css">
   <link rel="stylesheet" href="../HW 2/css/blocks/banner.css">
-  <link rel="stylesheet" href="../HW 2/css/blocks/btn.css">
+  <link rel="stylesheet" href="../HW 2/css/blocks/button.css">
   <link rel="stylesheet" href="../HW 2/css/blocks/content.css">
   <link rel="stylesheet" href="../HW 2/css/blocks/footer.css">
   <link rel="stylesheet" href="../HW 2/css/blocks/header.css">
   <link rel="stylesheet" href="../HW 2/css/blocks/nav.css">
+  <link rel="stylesheet" href="../HW 2/css/_misc/media.css">
+  <link rel="stylesheet" href="../HW 2/css/blocks/breadcrumbs.css">
   <link rel="stylesheet" href="/css/widgets/main.css">
-
+  <link rel="stylesheet" href="../HW 2/css/_misc/media.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- font awesome link  -->
@@ -31,134 +33,171 @@
 
 <body>
   <div class="wrapper">
-    <div class="wrapper_banner grey-color">
-      <div class="container">
-        <!--Выглядит так, что тут излишняя вложенность, мне кажется тут можно всё в 1-2 блока уместить.-->
-        <!-- Так же вижу проблемы наименованием классов. grey-color не может быть названием блока + слишком много блоков, вместо элементов
+    <div class="wrapper__banner row banner banner--gray">
+      <!--Выглядит так, что тут излишняя вложенность, мне кажется тут можно всё в 1-2 блока уместить.-->
+      <!-- Так же вижу проблемы наименованием классов. grey-color не может быть названием блока + слишком много блоков, вместо элементов
             например, banner-descr - блок (судя по названию), а можно сделать элементом  (banner__descr). Такие проблемы наблюдаются не только здесь. Нужно пройтись по коду и пофиксить такие места
         -->
-        <div class="banner row ">
-          <a href="#" class="banner-descr">Get real-time assistance with your coding queries. Try <a href="#"
-              class="banner-descr active">AI Help</a> now!</a>
-        </div>
-      </div>
+      <p class="banner__description">Get real-time assistance with your coding queries. Try
+        <a href="#" class="banner__descritpion active link">AI Help</a> now!
+      </p>
     </div>
 
     <!--Вот пример как можно переписать чтобы код был корректным с точки зрения БЭМа-->
-<!--    <div class="wrapper__banner row banner">-->
-<!--        <a href="#" class="banner__description link">Get real-time assistance with your coding queries. Try-->
-<!--          <a href="#"class="banner__description link">AI Help</a>-->
-<!--          now!-->
-<!--        </a>-->
-<!--      </div>-->
-<!--    </div>-->
+    <!--    <div class="wrapper__banner row banner">-->
+    <!--        <a href="#" class="banner__description link">Get real-time assistance with your coding queries. Try-->
+    <!--          <a href="#"class="banner__description link">AI Help</a>-->
+    <!--          now!-->
+    <!--        </a>-->
+    <!--      </div>-->
+    <!--    </div>-->
 
-
-    <header class="wrapper__header top-nav">
-      <div class="container">
-        <nav class="navigation">
-          <div class="navigation-container ff row">
-            <!-- Вот например тут 3 блока, хотя можно обойтись одним и сделать nav-left модификатором этого блока-->
-            <div class="nav header-nav nav-left">
-              <i class="fa-sharp fa-solid fa-m"></i>
-              <a href="#" class="navigation__element  header-nav-elem logo-but">mdn web docs</a>
-              <a href="#" class="navigation__element  header-nav-elem blue-hover">References</a>
-              <a href="#" class="navigation__element  header-nav-elem blue-hover">Guides</a>
-              <a href="#" class="navigation__element  header-nav-elem blue-hover">Plus</a>
-              <a href="#" class="navigation__element  header-nav-elem blue-hover">Blog</a>
-              <a href="#" class="navigation__element  header-nav-elem blue-hover">Play</a>
-              <a href="#" class="navigation__element  header-nav-elem blue-hover">AI Help</a>
-            </div>
-            <div class="nav header-nav nav-right">
-              <a href="" class="navigation__element theme-but gray-hover"><i class="fa-solid fa-moon"></i>Theme</a>
-              <button type="button" class="btn search-btn"><span>_</span>
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button> <!-- хотел сделать через search input, но не додумал как засунуть внутрь иконку -->
-              <a href="#" class="navigation__element login-but">Log in</a>
-              <button type="button" class="button signup-but gray-hover">Sign up for free</button>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <div class="bottom-nav grey-color">
-      <div class="container">
-        <div class="bottom-nav__actions row ">
-          <a href="#" class="navigation__element breadcrumbs text-hover">References</a>
-          <a href="#" class="button language-btn gray-hover"><i class="fa-solid fa-globe"></i>English (US)</a>
+    <div class="container">
+    <div class="hidden hidden__burger">
+        <a href="#" class="navigation__element  navigation__element--header active--hover-blue link logo"> <i
+            class="fa-sharp fa-solid fa-m"></i> mdn web
+          docs</a>
+        <div class="burger burger__container">
+          <nav class="navigation navigation--burger">
+            <input type="checkbox" id="burger-shower" class="burger-shower">
+            <label for="burger-shower" class="hamburger"><i class="fas fa-bars"></i></label>
+            <label for="burger-shower" class="openav"><i class="fas fa-times"></i></label>
+            <ul class="menunav">
+              <li class="list fisrtlink"><a href="#" class="plex-mono link navlink lettereffect">References</a></li>
+              <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Guides</a></li>
+              <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Plus</a></li>
+              <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Blog</a></li>
+              <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Play</a></li>
+              <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">AI Help</a></li>
+            </ul>
+            
+          </nav>
         </div>
       </div>
     </div>
+    <header class="wrapper__header wrapper--bordered">
+      <div class="container">
+        <nav class="navigation  row navigation--nav-left">
+          <!-- Вот например тут 3 блока, хотя можно обойтись одним и сделать nav-left модификатором этого блока-->
+
+
+          <div class="navigation__container">
+            <i class="fa-sharp fa-solid fa-m"></i>
+            <a href="#" class="navigation__element  navigation__element--header active--hover-blue link logo">mdn web
+              docs</a>
+            <a href="#" class="navigation__element  navigation__element--header active--hover-blue link">References</a>
+            <a href="#" class="navigation__element  navigation__element--header active--hover-blue link">Guides</a>
+            <a href="#" class="navigation__element  navigation__element--header active--hover-blue link">Plus</a>
+            <a href="#" class="navigation__element  navigation__element--header active--hover-blue link">Blog</a>
+            <a href="#" class="navigation__element  navigation__element--header active--hover-blue link">Play</a>
+            <a href="#" class="navigation__element  navigation__element--header active--hover-blue link">AI Help</a>
+          </div>
+          <div class="navigation__container navigation__container--right">
+            <a href="#" class="navigation__element active--hover-gray link"><i class="fa-solid fa-moon"></i>Theme</a>
+            <button type="button" class="button button--search"><span>_</span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button> <!-- хотел сделать через search input, но не додумал как засунуть внутрь иконку -->
+            <a href="#" class="navigation__element link">Log in</a>
+            <button type="button" class="button button--signup active--hover-gray">Sign up for free</button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="breadcrumbs  banner--gray breadcrumbs--bordered">
+        <div class="container">
+          <div class="breadcrumbs__actions row ">
+            <a href="#" class="breadcrumbs__element banner--gray text--hover link">References</a>
+            <a href="#" class="button button--language active--hover-gray"><i class="fa-solid fa-globe"></i>English
+              (US)</a>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
     <main class="wrapper__content content-part">
       <div class="container">
-        <div class="content-part-container row">
-          <aside class="content-part-sidebar">
+        <div class="content-part__container ">
+          <aside class="sidebar">
             <!--Вот тут нет блока, но правильно то, что container является элементом блока-->
             <div class="sidebar__container column">
-              <button type="button" class="btn filter-btn"><i
+              <button type="button" class="button button--filter"><i
                   class="fa-sharp fa-solid fa-filter fa-xs"></i>Filter</button>
-              <nav class="sidebar__navigation column">
-                <a href="#" class="sidebar__navigation-element text-hover">CSS:Cascading Style Sheets</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Demos of open web technologies</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Developer guides</a>
-                <a href="#" class="sidebar__navigation-element text-hover">EXSLT</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Event reference</a>
-                <a href="#" class="sidebar__navigation-element text-hover">HTTP</a>
-                <a href="#" class="sidebar__navigation-element text-hover">HTML:HyperText Markup Language</a>
-                <a href="#" class="sidebar__navigation-element text-hover">JavaScript</a>
-                <a href="#" class="sidebar__navigation-element text-hover">MathML</a>
-                <a href="#" class="sidebar__navigation-element text-hover">SVG</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Text fragments</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Security on the web</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Tutorial</a>
-                <a href="#" class="sidebar__navigation-element text-hover">HTML</a>
-                <a href="#" class="sidebar__navigation-element text-hover">JavaScript</a>
-                <a href="#" class="sidebar__navigation-element text-hover">MathML</a>
-                <a href="#" class="sidebar__navigation-element text-hover">SVG</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Text fragments</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Security on the web</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Tutorial</a>
-                <a href="#" class="sidebar__navigation-element text-hover">HTML</a>
-                <a href="#" class="sidebar__navigation-element text-hover">JavaScript</a>
-                <a href="#" class="sidebar__navigation-element text-hover">MathML</a>
-                <a href="#" class="sidebar__navigation-element text-hover">SVG</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Text fragments</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Security on the web</a>
-                <a href="#" class="sidebar__navigation-element text-hover">Tutorial</a>
-
+              <nav class="navigation navigation--sidebar column">
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">CSS:Cascading Style
+                  Sheets</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Demos of open web
+                  technologies</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Developer guides</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">EXSLT</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Event reference</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">HTTP</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">HTML:HyperText Markup
+                  Language</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">JavaScript</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">MathML</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">SVG</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Text fragments</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Security on the web</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Tutorial</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">HTML</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">JavaScript</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">MathML</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">SVG</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Text fragments</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Security on the web</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Tutorial</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">HTML</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">JavaScript</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">MathML</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">SVG</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Text fragments</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Security on the web</a>
+                <a href="#" class="navigation__element navigation__element--sidebar text--hover">Tutorial</a>
               </nav>
             </div>
           </aside>
-          <div class="content-part-main">
-            <div class="content-part-main__container">
-              <h1 class="title heading-h1">Web technology for developers</h1>
-              <p class="descr">The open Web presents incredible opportunities for developers. To take full advantage of
+          <div class="content-part__main">
+            <div class="content-part__main-container">
+              <h1 class="title h1">Web technology for developers</h1>
+              <p class="topic topic--main">The open Web presents incredible opportunities for developers. To take full
+                advantage of
                 these technologies, you need to know how to use them. Below you'll find links to our Web technology
                 documentation.</p>
-              <p class="descr">The open Web presents incredible opportunities for developers. To take full advantage of
+              <p class="topic topic--main">The open Web presents incredible opportunities for developers. To take full
+                advantage of
                 these technologies, you need to know how to use them. Below you'll find links to our Web technology
                 documentation.</p>
-              <p class="descr">The open Web presents incredible opportunities for developers. To take full advantage of
+              <p class="topic topic--main">The open Web presents incredible opportunities for developers. To take full
+                advantage of
                 these technologies, you need to know how to use them. Below you'll find links to our Web technology
                 documentation.</p>
-              <h1 class="title heading-h1">Web technology for developers</h1>
-              <p class="descr">The open Web presents incredible opportunities for developers. To take full advantage of
+              <h1 class="title h1">Web technology for developers</h1>
+              <p class="topic topic--main">The open Web presents incredible opportunities for developers. To take full
+                advantage of
                 these technologies, you need to know how to use them. Below you'll find links to our Web technology
                 documentation.</p>
-              <h1 class="title heading-h1">Web technology for developers</h1>
-              <p class="descr">The open Web presents incredible opportunities for developers. To take full advantage of
+              <h1 class="title h1">Web technology for developers</h1>
+              <p class="topic topic--main">The open Web presents incredible opportunities for developers. To take full
+                advantage of
                 these technologies, you need to know how to use them. Below you'll find links to our Web technology
                 documentation.</p>
             </div>
           </div>
-          <div class="content-part-article">
-            <div class="content-part-article__container">
+          <div class="content-part__article">
+            <div class="content-part__article-container">
               <h3 class="title">In this article</h3>
-              <ul class="article-nav">
-                <li><a href="#" class="article__element text-hover-color">Documenation for Web developers</a></li>
-                <li><a href="#" class="article__element text-hover-color">Web technology references</a></li>
-                <li><a href="#" class="article__element text-hover-color">Developer tools documenation</a></li>
-              </ul>
+              <nav class="navigation navigation--article">
+                <ul class="list list--article">
+                  <li><a href="#"
+                      class="navigation__element navigation__element--article text--hover-colored">Documenation for Web
+                      developers</a></li>
+                  <li><a href="#" class="navigation__element navigation__element--article text--hover-colored">Web
+                      technology references</a></li>
+                  <li><a href="#" class="navigation__element navigation__element--article text--hover-colored">Developer
+                      tools documenation</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -167,44 +206,45 @@
 
 
     <footer class="footer wrapper__footer">
-      <div class="container w">
+      <div class="container">
         <div class="footer__container">
-          <div class="navigation-container footer-nav-container row">
-            <div class="brand-logo">
+          <div class="navigation navigation--footer footer-nav-container row">
+            <div class="footer__logos">
               <h2>mdn</h2>
               <p>Your blueprint for a better internet.</p>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-github"></i>
               <i class="fa-brands fa-youtube"></i>
             </div>
-            <div class="nav footer-nav column">
+            <div class="column footer__column">
               <a href="#" class="navigation__element footer-nav-elem">References</a>
               <a href="#" class="navigation__element footer-nav-elem">Guides</a>
               <a href="#" class="navigation__element footer-nav-elem">Plus</a>
               <a href="#" class="navigation__element footer-nav-elem">Blog</a>
             </div>
-            <div class="nav footer-nav column">
+            <div class="column footer__column">
               <a href="#" class="navigation__element footer-nav-elem">References</a>
               <a href="#" class="navigation__element footer-nav-elem">Guides</a>
               <a href="#" class="navigation__element footer-nav-elem">Plus</a>
               <a href="#" class="navigation__element footer-nav-elem">Blog</a>
             </div>
-            <div class="nav footer-nav column">
+            <div class="column footer__column">
               <a href="#" class="navigation__element footer-nav-elem">References</a>
               <a href="#" class="navigation__element footer-nav-elem">Guides</a>
               <a href="#" class="navigation__element footer-nav-elem">Plus</a>
               <a href="#" class="navigation__element footer-nav-elem">Blog</a>
             </div>
-            <div class="nav footer-nav column">
+            <div class="column footer__column">
               <a href="#" class="navigation__element footer-nav-elem">References</a>
               <a href="#" class="navigation__element footer-nav-elem">Guides</a>
               <a href="#" class="navigation__element footer-nav-elem">Plus</a>
               <a href="#" class="navigation__element footer-nav-elem">Blog</a>
             </div>
           </div>
-          <!--Тут IDE ругается, что отсутствует закрывающий div-->
+        </div> <!--Тут IDE ругается, что отсутствует закрывающий div-->
     </footer>
   </div>
+  <script src="https://kit.fontawesome.com/bb59c00efd.js"></script>
 </body>
 
 </html>

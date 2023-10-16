@@ -1,33 +1,26 @@
-.top-nav{
+
+.wrapper--bordered{
   border-bottom: 1px solid var(--border-color);
 }
-.nav-left{
+.navigation__container--nav-left{
   margin: 0 0.2rem;
 }
-.header-nav-elem{
+.navigation__element--header{
   padding: 0.8rem;
 }
-.logo-but{
+.logo{
   color:#fff;
 }
 
-.logo-but::after{
+.logo::after{
   content: '_';
   color:var(--mdn-color);
   font-weight: bolder;
 }
-
-.bottom-nav__actions{
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0.6rem;
-  padding: 0.3rem;
-  
+.hidden{
+  display: none;
 }
-.bottom-nav{
-  border-bottom: 1px solid var(--border-color);
 
-}
 
 
 

@@ -115,23 +115,13 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
-.grey-color {
+.link{
+  text-decoration: none;
+}
+.banner--gray {
   background-color: var(--mdn-color-dark-grey);
 }
-
-@media (max-width: 768px) {
-
-  html,
-  body {
-    font-size: .9375rem;
-  }
-}
-
-@media (max-width: 480px) {
-
-  html,
-  body {
-    font-size: .875rem;
-  }
+.h1{
+  font-size: var(--type-heading-h1-font-size);
+  font-weight: 600;
 }

@@ -1,0 +1,40 @@
+.button--search{
+  border-radius: 1rem;
+  /*
+  БЭМ блоку нельзя задавать внешнюю геометрию, отступы, способ позиционирования и тп.
+  Суть блока в том, что если его скопипастить в любое другое место, он встанет и не сломает вёрстку.
+  В данном  же случае, если его вставить куда-нибудь он у тебя всегда будет иметь фиксированную ширину, даже когда места будет мало..
+  Вместо этого, надо создать БЭМ элемент в том месте где у тебя этот класс находится и уже ему задавать эту ширину
+  */
+  width: 5rem;
+  background-color: var(--main-color);
+  border: 1px  solid var( --light-color-primary);
+  color:var( --light-color-primary);
+}
+.button--search{
+  padding: 0.3rem;
+  width: 4rem;
+}
+.button--search span{
+  color: var(--mdn-color); 
+}
+.button--signup{
+  padding: 0.5rem 0.9rem;
+  border-radius: 5px;
+  font-size:0.8rem;
+}
+.button--language{
+  color: var(--light-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: small;
+}
+.button--filter {
+  border-radius: 1rem;
+  background-color: var(--main-color);
+  border: 1px  solid var( --light-color-primary);
+  color:var( --light-color-primary);
+  padding: 0.5rem;
+  width: 5rem;
+}
+

@@ -1,4 +1,4 @@
-.wrapper_banner{
+.wrapper__banner{
   border-bottom: 1px solid var(--border-color);
 }
 .banner{
@@ -6,11 +6,10 @@
   padding: 1rem;
  
 }
-.banner-descr{
+.banner__descr{
   /* Вижу очень много мест, где таким образом сбрасываются стили у ссылки. Такой копипасты надо исбегать. Можно сделать класс link и туда вынести стили которые будут у всех ссылок (например text-decoration: none;)
    И везде использовать это класс. В случае необходимости можно дополнить этот класс модификаторами
-   */
-  text-decoration: none;
+   */ 
   color: #fff;
   font-weight: 300;
 }

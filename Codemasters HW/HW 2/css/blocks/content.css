@@ -3,11 +3,14 @@
   grid-gap: 3rem;
   gap:3rem;
 } */
-.content-part-container{
+
+.content-part__container{
   justify-content: space-around;
-  margin: 0 -3rem;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
 }
-.content-part-sidebar{
+.sidebar__container{
   padding-bottom: 2rem;
   padding-right: 0.5rem;
   padding-top: 0.5rem;
@@ -16,51 +19,38 @@
   width: 5rem;
   border-radius: 1rem;
 }
-.sidebar__navigation{
-  overflow-y:scroll;
-}
-.sidebar__navigation{
-  margin-top: 1.5rem;
-  max-height: 800px;
-}
 
 
-.sidebar__navigation-element{
-  padding: 0.5rem;
-  display: inline-flex;
-  color: var(--light-color);
-  text-decoration: none;
-  min-width:max-content;
-  margin-bottom: 0.5rem;
-  font-size: var(--type-smaller-font-size);
-  
-}
-.content-part-main__container{
+
+
+.content-part__main-container{
+  padding-left: 3rem;
   padding-bottom: 3rem;
   padding-top: 3rem;
-  max-width: 700px;
+  max-width: 1000px;
 }
-.heading-h1{
-  font-size: var(--type-heading-h1-font-size);
-  font-weight: 600;
-}
-.descr{
+
+.topic--main{
   line-height: 1.5rem;
   margin: 1rem 0 2rem;
   font-weight: 300;
 }
-.content-part-article__container{
+.content-part__article{
+  padding-left: 7rem;
+}
+.content-part__article-container{
   padding-top: 3rem;
   max-width: 230px;
 
 }
-.article-nav{
+.navigation--article{
   border-left: 2px solid var(--border-color);
 }
-.article-nav li{
-  padding: 0.5rem 1rem;
+.list--article li{
+  margin: 1.5rem 1rem;
 }
 .article__element{
+  
   text-decoration: none;
   color: var(--light-color);
   font-size: var(--type-smaller-font-size);
@@ -68,7 +58,7 @@
 
 
 /* custom scroolbar */
-.sidebar__navigation::-webkit-scrollbar-track {border-radius: 0px;}
-.sidebar__navigation::-webkit-scrollbar {width: 13px;}
-.sidebar__navigation::-webkit-scrollbar-thumb {border-radius: 4px;background: var(--mdn-color-dark-grey);}
-.sidebar__navigation:hover::-webkit-scrollbar-thumb {background: var(--mdn-color-dark-grey);}
+.navigation--sidebar::-webkit-scrollbar-track {border-radius: 0px;}
+.navigation--sidebar::-webkit-scrollbar {width: 13px;}
+.navigation--sidebar::-webkit-scrollbar-thumb {border-radius: 4px;background: var(--mdn-color-dark-grey);}
+.navigation--sidebar:hover::-webkit-scrollbar-thumb {background: var(--mdn-color-dark-grey);}

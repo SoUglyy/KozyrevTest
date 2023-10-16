@@ -1,15 +1,15 @@
-.blue-hover:hover{
+.active--hover-blue:hover:hover{
   background-color:#4C5E7F;
   color:#7aa1e8;
   border-radius: 5px;
 }
-.gray-hover:hover{
+.active--hover-gray:hover{
   background-color: #858585;
   border-radius: 5px;
 }
-.text-hover:hover{
+.text--hover:hover{
   text-decoration: underline;
 }
-.text-hover-color:hover{
+.text--hover-colored:hover{
   color:#7aa1e8
 }
