@@ -39,7 +39,7 @@
             например, banner-descr - блок (судя по названию), а можно сделать элементом  (banner__descr). Такие проблемы наблюдаются не только здесь. Нужно пройтись по коду и пофиксить такие места
         -->
       <p class="banner__description">Get real-time assistance with your coding queries. Try
-        <a href="#" class="banner__descritpion active link">AI Help</a> now!
+        <a href="#" class="banner__descritpion active link">AI Help</a> now! <!-- Вот тут бэм использован хорошо-->
       </p>
     </div>
 
@@ -53,10 +53,11 @@
     <!--    </div>-->
 
     <div class="container">
-    <div class="hidden hidden__burger">
-        <a href="#" class="navigation__element  navigation__element--header active--hover-blue link logo"> <i
-            class="fa-sharp fa-solid fa-m"></i> mdn web
-          docs</a>
+    <div class="hidden hidden__burger"> <!-- Тут проблемы именованием классов.  Название блока характеризует смысл («что это?» — «меню»: menu, «кнопка»: button), а не состояние («какой, как выглядит?» — «красный»: red, «большой»: big).-->
+        <a href="#" class="navigation__element  navigation__element--header active--hover-blue link logo">  <!-- Тут элементы лежат вне блока, такого быть не должно -->
+            <i class="fa-sharp fa-solid fa-m"></i>
+            mdn web docs
+        </a>
         <div class="burger burger__container">
           <nav class="navigation navigation--burger">
             <input type="checkbox" id="burger-shower" class="burger-shower">
@@ -70,7 +71,7 @@
               <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Play</a></li>
               <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">AI Help</a></li>
             </ul>
-            
+
           </nav>
         </div>
       </div>
@@ -85,6 +86,25 @@
             <i class="fa-sharp fa-solid fa-m"></i>
             <a href="#" class="navigation__element  navigation__element--header active--hover-blue link logo">mdn web
               docs</a>
+              <!--
+           Тут в принципе всё правильно с точки зрения БЭМ, но можно улучшить. Сейчас у тебя 1 большой блок navigation внутри которого много элементом (причем они местами вложены далеко глубоко, как например navigation__element)
+           Можно сделать 1 большйо блок navigation в котором будет несколько маленьких блоков (например link-list). Внутри link-list будут элементы link-list__item (ссылки).
+           Таким образом у тебя будет более гибкая структура в которой ссылки не привязаны к тому, что они лежат внутри огромного блока navigation.
+           Вот пример кода.
+
+           <nav class="navigation navigation--left-aligned row">
+             <div class="navigation__container link-list">
+               <i class="fa-sharp fa-solid fa-m"></i>
+               <a href="#" class="link-list__item  link-list__item--with-offset active--hover-blue link logo">mdn web docs</a>
+               <a href="#" class="link-list__item  link-list__item--with-offset active--hover-blue link">References</a>
+               <a href="#" class="link-list__item  link-list__item--with-offset active--hover-blue link">Guides</a>
+               <a href="#" class="link-list__item  link-list__item--with-offset active--hover-blue link">Plus</a>
+             ...........................
+           Таким образом ты в случае чего можешь просто скопипастить блок List-item куда надо и у тебя не будет привязки к тому где он находится
+
+
+           PS. navigation__element--header перезаписывается в двух разных файлах, и такое встречается несколько раз
+             -->
             <a href="#" class="navigation__element  navigation__element--header active--hover-blue link">References</a>
             <a href="#" class="navigation__element  navigation__element--header active--hover-blue link">Guides</a>
             <a href="#" class="navigation__element  navigation__element--header active--hover-blue link">Plus</a>
@@ -242,7 +262,7 @@
             </div>
           </div>
         </div> <!--Тут IDE ругается, что отсутствует закрывающий div-->
-    </footer>
+    </footer> <!--Тут IDE ВСЁ ЕЩЕ ругается, что отсутствует закрывающий div-->
   </div>
   <script src="https://kit.fontawesome.com/bb59c00efd.js"></script>
 </body>

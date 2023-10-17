@@ -47,7 +47,7 @@
   transition: all 1s ease-in-out;
 }
 
-
+/* В БЭМе использовать нужно только классы, а не id, теги или композицию селекторов */
 .burger-shower:checked ~ .menunav {
   width: 100%;
   height: 254px;
@@ -72,7 +72,7 @@
 
 .navlink {
   font-size: 1rem;
-  color: var(--white);
+  color: var(--white); /* Такой переменной нет*/
 }
 
 
