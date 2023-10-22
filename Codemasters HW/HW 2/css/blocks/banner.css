@@ -1,22 +1,18 @@
-.wrapper__banner{
+.wrapper__banner {
   border-bottom: 1px solid var(--border-color);
-}
-.banner{
-  justify-content: center;
   padding: 1rem;
- 
 }
-.banner__descr{
-  /* Вижу очень много мест, где таким образом сбрасываются стили у ссылки. Такой копипасты надо исбегать. Можно сделать класс link и туда вынести стили которые будут у всех ссылок (например text-decoration: none;)
-   И везде использовать это класс. В случае необходимости можно дополнить этот класс модификаторами
-   */ 
+
+.banner {
+  justify-content: center;
+
+}
+
+.banner--gray {
+  background-color: var(--mdn-color-dark-grey);
+}
+
+.banner__descr {
   color: #fff;
   font-weight: 300;
-}
-.active{
-  color:#AE8AFF;
-  margin: 0 0.2rem;
-}
-.active:hover{
-  text-decoration:underline;
 }

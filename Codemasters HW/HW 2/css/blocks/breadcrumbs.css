@@ -1,14 +1,19 @@
-.breadcrumbs__actions{
+.breadcrumbs-list {
   justify-content: space-between;
   align-items: center;
+
+}
+
+.breadcrumbs-list--aligned {
   margin: 0 0.6rem;
   padding: 0.3rem;
-  
 }
-.breadcrumbs--bordered{
+
+.breadcrumbs--bordered {
   border-top: 1px solid var(--border-color);
 }
-.breadcrumbs__element{
-  color:var(--light-color);
+
+.breadcrumbs-list__item {
+  color: var(--light-color);
   font-weight: 300;
 }

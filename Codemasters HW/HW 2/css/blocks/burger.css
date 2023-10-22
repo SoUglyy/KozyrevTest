@@ -1,9 +1,5 @@
-
-
-
-
 .burger__container {
-  height: 44px;
+  height: 35px;
 }
 
 
@@ -24,17 +20,13 @@
   opacity: 0;
   width: 14px;
   height: 14px;
-
   top: 25px;
   right: 26px;
   transition: opacity 0.5s linear;
 }
 
 
-.hamburger {
-  opacity: 1;
-  transition: opacity 0.5s linear 0.5s;
-}
+
 
 
 .menunav {
@@ -47,32 +39,36 @@
   transition: all 1s ease-in-out;
 }
 
-/* В БЭМе использовать нужно только классы, а не id, теги или композицию селекторов */
-.burger-shower:checked ~ .menunav {
+
+
+
+
+/*
+.burger-shower:checked~.menunav {
   width: 100%;
   height: 254px;
   top: 83px;
   left: 1px;
-  background-color: var( --mdn-color-dark-grey);
+  background-color: var(--mdn-color-dark-grey);
   opacity: 1;
   transition: all 1s ease-in-out;
 }
 
 
-.burger-shower:checked ~ .hamburger {
+.burger-shower:checked~.hamburger {
   opacity: 0;
   transition: opacity 0.5s linear;
 }
 
 
-.burger-shower:checked ~ .openav {
+.burger-shower:checked~.openav {
   opacity: 1;
   transition: opacity 0.5s linear 0.5s;
 }
 
 .navlink {
   font-size: 1rem;
-  color: var(--white); /* Такой переменной нет*/
+
 }
 
 
@@ -80,11 +76,10 @@
   width: 100%;
   height: 1.75rem;
   margin-top: 1rem;
- 
+
 }
 
 
 .fisrtlink {
   margin-top: 1rem;
-}
-
+} */

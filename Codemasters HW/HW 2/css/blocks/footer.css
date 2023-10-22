@@ -1,17 +1,17 @@
+.footer__container {
+  padding: 1.5rem;
+}
 
-.footer__logos p{
-margin-bottom: 2rem;
+.title__descr {
+  margin-bottom: 2rem;
 }
-.footer__logos i{
-  padding-right: 0.4rem;
-}
-.wrapper__footer{
+
+.wrapper__footer {
   background-color: var(--mdn-color-dark-grey);
 
 }
 
-
-.footer-nav-elem{
+.link-list__item--footer {
   padding: 0.4rem;
   font-size: var(--type-smaller-font-size);
 }

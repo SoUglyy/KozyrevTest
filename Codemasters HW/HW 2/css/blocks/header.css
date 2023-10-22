@@ -1,26 +1,25 @@
-
-.wrapper--bordered{
+.wrapper--bordered {
   border-bottom: 1px solid var(--border-color);
 }
-.navigation__container--nav-left{
+
+.navigation__container--nav-left {
   margin: 0 0.2rem;
 }
-.navigation__element--header{
+
+.link-list__item--header {
   padding: 0.8rem;
 }
-.logo{
-  color:#fff;
+
+.logo {
+  color: #fff;
 }
 
-.logo::after{
+.logo::after {
   content: '_';
-  color:var(--mdn-color);
+  color: var(--mdn-color);
   font-weight: bolder;
 }
-.hidden{
+
+.wrapper--hidden {
   display: none;
 }
-
-
-
-
