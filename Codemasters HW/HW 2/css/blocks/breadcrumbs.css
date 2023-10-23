@@ -1,19 +1,10 @@
-.breadcrumbs-list {
-  justify-content: space-between;
-  align-items: center;
-
+.breadcrumbs {
+    line-height: 28px;
+    background: #343434;
 }
 
-.breadcrumbs-list--aligned {
-  margin: 0 0.6rem;
-  padding: 0.3rem;
-}
-
-.breadcrumbs--bordered {
-  border-top: 1px solid var(--border-color);
-}
-
-.breadcrumbs-list__item {
-  color: var(--light-color);
-  font-weight: 300;
+.breadcrumbs__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
 }

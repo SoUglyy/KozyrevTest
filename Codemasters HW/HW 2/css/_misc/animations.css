@@ -16,11 +16,3 @@
 .text--hover-colored:hover {
   color: #7aa1e8
 }
-
-.active {
-  color: #AE8AFF;
-}
-
-.active:hover {
-  text-decoration: underline;
-}
