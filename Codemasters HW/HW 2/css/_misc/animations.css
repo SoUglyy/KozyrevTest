@@ -9,9 +9,7 @@
   border-radius: 5px;
 }
 
-.text--hover:hover {
-  text-decoration: underline;
-}
+
 
 .text--hover-colored:hover {
   color: #7aa1e8

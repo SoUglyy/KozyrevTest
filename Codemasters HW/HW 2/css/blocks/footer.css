@@ -1,17 +1,17 @@
-.footer__container {
-  padding: 1.5rem;
-}
-
-.title__descr {
-  margin-bottom: 2rem;
-}
-
 .wrapper__footer {
   background-color: var(--mdn-color-dark-grey);
 
 }
-
-.link-list__item--footer {
+.footer__container {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin: 0 auto;
+}
+.footer__link{
   padding: 0.4rem;
   font-size: var(--type-smaller-font-size);
+}
+.title__descr {
+  margin-bottom: 2rem;
 }

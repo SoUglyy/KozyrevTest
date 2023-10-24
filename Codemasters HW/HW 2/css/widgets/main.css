@@ -17,7 +17,7 @@
 @import "/css/blocks/btn.css" screen;
 @import "/css/blocks/banner.css" screen;
 @import "/css/blocks/footer.css" screen;
-@import "/css/blocks/nav.css" screen;
 @import "/css/blocks/breadcrumbs.css" screen;
+@import "/css/blocks/sidebar.css" screen;
+@import "/css/blocks/article.css" screen;
 @import "/css/_misc/media.css" screen;
-@import "/css/blocks/burger.css" screen;

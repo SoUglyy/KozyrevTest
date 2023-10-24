@@ -108,9 +108,19 @@ footer {
 .row {
   display: flex;
 }
+.row--centered-x {
+  justify-content: center;
+}
 
-.row--footer {
-  justify-content: space-evenly;
+.row--centered-y {
+  align-items: center;
+}
+.row--centered-xy {
+  justify-content: center;
+  align-items: center;
+}
+.row--space {
+  justify-content: space-between;
 }
 
 .column {
