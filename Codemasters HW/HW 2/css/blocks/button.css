@@ -1,3 +1,7 @@
+.button {
+  cursor: pointer;
+}
+
 .button--search {
   border-radius: 1rem;
   width: 5rem;

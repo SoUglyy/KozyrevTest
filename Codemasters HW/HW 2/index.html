@@ -2,106 +2,112 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>MDN</title>
-  <!-- css files link  -->
-  <link rel="stylesheet" href="../HW 2/css/blocks/burger.css">
-  <link rel="stylesheet" href="../HW 2/css/_misc/layout.css">
-  <link rel="stylesheet" href="../HW 2/css/_misc/facustom.css">
-  <link rel="stylesheet" href="../HW 2/css/_misc/animations.css">
-  <link rel="stylesheet" href="../HW 2/css/_misc/fonts.css">
-  <link rel="stylesheet" href="../HW 2/css/_misc/normalize.css">
-  <link rel="stylesheet" href="../HW 2/css/widgets/main.css">
-  <link rel="stylesheet" href="../HW 2/css/blocks/banner.css">
-  <link rel="stylesheet" href="../HW 2/css/blocks/button.css">
-  <link rel="stylesheet" href="../HW 2/css/blocks/content.css">
-  <link rel="stylesheet" href="../HW 2/css/blocks/footer.css">
-  <link rel="stylesheet" href="../HW 2/css/blocks/header.css">
-  <link rel="stylesheet" href="../HW 2/css/blocks/nav.css">
-  <link rel="stylesheet" href="../HW 2/css/_misc/media.css">
-  <link rel="stylesheet" href="../HW 2/css/blocks/breadcrumbs.css">
-  <link rel="stylesheet" href="/css/widgets/main.css">
-  <link rel="stylesheet" href="../HW 2/css/_misc/media.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- font awesome link  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>MDN</title>
+    <!-- css files link  -->
+    <link rel="stylesheet" href="../HW 2/css/blocks/burger.css">
+    <link rel="stylesheet" href="../HW 2/css/_misc/layout.css">
+    <link rel="stylesheet" href="../HW 2/css/_misc/facustom.css">
+    <link rel="stylesheet" href="../HW 2/css/_misc/animations.css">
+    <link rel="stylesheet" href="../HW 2/css/_misc/fonts.css">
+    <link rel="stylesheet" href="../HW 2/css/_misc/normalize.css">
+    <link rel="stylesheet" href="../HW 2/css/widgets/main.css">
+    <link rel="stylesheet" href="../HW 2/css/blocks/banner.css">
+    <link rel="stylesheet" href="../HW 2/css/blocks/button.css">
+    <link rel="stylesheet" href="../HW 2/css/blocks/content.css">
+    <link rel="stylesheet" href="../HW 2/css/blocks/footer.css">
+    <link rel="stylesheet" href="../HW 2/css/blocks/header.css">
+    <link rel="stylesheet" href="../HW 2/css/blocks/nav.css">
+    <link rel="stylesheet" href="../HW 2/css/_misc/media.css">
+    <link rel="stylesheet" href="../HW 2/css/blocks/breadcrumbs.css">
+    <link rel="stylesheet" href="/css/widgets/main.css">
+    <link rel="stylesheet" href="../HW 2/css/_misc/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body>
-  <div class="wrapper">
+<div class="wrapper">
     <div class="wrapper__banner row banner banner--gray">
-      <p class="banner__description">Get real-time assistance with your coding queries. Try
-        <a href="#" class="banner__descritpion active link">AI Help</a> now! <!-- Вот тут бэм использован хорошо-->
-      </p>
+      <span>
+          Get real-time assistance with your coding queries. Try
+          <a href="#" class="active link link--activated">AI Help</a>
+          now!
+      </span>
     </div>
     <div class="wrapper__header-adapative wrapper--hidden">
-      <div class="container">
-        <div class="burger burger__container">
-          <div>
-            <a href="#" class="navigation__element  navigation__element--header active--hover-blue link logo">
-              <i class="fa-sharp fa-solid fa-m"></i>
-              mdn web docs
-            </a>
-          </div>
-          <div>
-            <nav class="navigation navigation--burger">
-              <input type="checkbox" id="burger-shower" class="burger-shower">
-              <label for="burger-shower" class="burger-logo"><i class="fas fa-bars"></i></label>
-              <label for="burger-shower" class="openav"><i class="fas fa-times"></i></label>
-              <!-- <ul class="menunav">
-                <li class="list fisrtlink"><a href="#" class="plex-mono link navlink lettereffect">References</a></li>
-                <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Guides</a></li>
-                <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Plus</a></li>
-                <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Blog</a></li>
-                <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Play</a></li>
-                <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">AI Help</a></li>
-              </ul>  решил пока закоментить, так как функционал без JS не реализую -->
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-    <header class="wrapper__header wrapper--bordered">
-      <div class="container">
-        <nav class="navigation  row navigation--left-aligned">
-          <div class="navigation__container link-list">
-            <i class="fa-sharp fa-solid fa-m fa--aligned"></i>
-            <a href="#" class="link-list__item  link-list__item--header  link logo">mdn webdocs</a>
-            <a href="#" class="link-list__item  link-list__item--header active--hover-blue link">References</a>
-            <a href="#" class="link-list__item  link-list__item--header active--hover-blue link">Guides</a>
-            <a href="#" class="link-list__item  link-list__item--header active--hover-blue link">Plus</a>
-            <a href="#" class="link-list__item  link-list__item--header active--hover-blue link">Blog</a>
-            <a href="#" class="link-list__item  link-list__item--header active--hover-blue link">Play</a>
-            <a href="#" class="link-list__item  link-list__item--header active--hover-blue link">AI Help</a>
-          </div>
-          <div class="navigation__container link-list">
-            <a href="#" class="link-list__item active--hover-gray link"><i
-                class="fa-solid fa-moon fa--aligned"></i>Theme</a>
-            <button type="button" class="button button--search"><span>_</span>
-              <i class="fa-solid fa-magnifying-glass fa--aligned"></i>
-            </button> <!-- хотел сделать через search input, но не додумал как засунуть внутрь иконку -->
-            <a href="#" class="link-list__item link">Log in</a>
-            <button type="button" class="button button--signup active--hover-gray">Sign up for free</button>
-          </div>
-        </nav>
-      </div>
-
-      <div class="breadcrumbs  banner--gray breadcrumbs--bordered">
         <div class="container">
-          <div class="breadcrumbs-list breadcrumbs-list--aligned row">
-            <a href="#" class="breadcrumbs-list__item banner--gray text--hover link">References</a>
-            <a href="#" class="button button--language active--hover-gray"><i
-                class="fa-solid fa-globe fa--aligned"></i>English
-              (US)</a>
-          </div>
+            <div class="burger burger__container">
+                <div>
+                    <a href="#" class="navigation__element  navigation__element--header active--hover-blue link logo">
+                        <i class="fa-sharp fa-solid fa-m"></i>
+                        mdn web docs
+                    </a>
+                </div>
+                <div>
+                    <nav class="navigation navigation--burger">
+                        <input type="checkbox" id="burger-shower" class="burger-shower">
+                        <label for="burger-shower" class="burger-logo"><i class="fas fa-bars"></i></label>
+                        <label for="burger-shower" class="openav"><i class="fas fa-times"></i></label>
+                        <!-- <ul class="menunav">
+                          <li class="list fisrtlink"><a href="#" class="plex-mono link navlink lettereffect">References</a></li>
+                          <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Guides</a></li>
+                          <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Plus</a></li>
+                          <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Blog</a></li>
+                          <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">Play</a></li>
+                          <li class="list--burger"><a href="#" class="plex-mono link navlink lettereffect">AI Help</a></li>
+                        </ul>  решил пока закоментить, так как функционал без JS не реализую -->
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
 
+    <header class="header wrapper__header">
+        <div class="container header__container">
+            <div class="row">
+                <div class="header__logo">
+                    <img class="image" src="assets/img/logo.svg" alt="logo">
+                </div>
+
+                <div class="header-links">
+                    <a class="header__link link" href="">References</a>
+                    <a class="header__link link" href="">Guides</a>
+                    <a class="header__link link" href="">Plus</a>
+                    <a class="header__link link" href="">Blog</a>
+                    <a class="header__link link" href="">Play</a>
+                </div>
+            </div>
+
+            <div class="header-menu">
+                <form class="header-menu__form" action="">
+                    <label for="search-input">Theme</label>
+                    <input class="header-menu__search-bar" type="search" id="search-input">
+                    <a class="link" href="#">Log in</a>
+                    <button class="button header-menu__sign-up-btn" type="button">Sign up for free</button>
+                </form>
+            </div>
+        </div>
     </header>
+
+    <div class="breadcrumbs">
+        <div class="container breadcrumbs__content">
+            <div>
+                <a class="link link--secondary link--hovering_underline" href="#">Guides</a>
+                <span> > </span>
+                <a class="link link--secondary link--hovering_underline" href="#">HTML</a>
+            </div>
+
+            <button type="button" class="button">
+                English
+            </button>
+        </div>
+    </div>
 
     <main class="wrapper__content content">
       <div class="container">
@@ -229,8 +235,8 @@
         </div>
       </div>
     </footer>
-  </div>
-  <script src="https://kit.fontawesome.com/bb59c00efd.js"></script>
+</div>
+<script src="https://kit.fontawesome.com/bb59c00efd.js"></script>
 </body>
 
 </html>

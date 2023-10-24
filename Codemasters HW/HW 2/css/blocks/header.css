@@ -1,5 +1,16 @@
-.wrapper--bordered {
+.header {
   border-bottom: 1px solid var(--border-color);
+}
+
+.header__container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  height: 64px;
+  width: 120px;
 }
 
 .navigation__container--nav-left {
@@ -18,8 +29,4 @@
   content: '_';
   color: var(--mdn-color);
   font-weight: bolder;
-}
-
-.wrapper--hidden {
-  display: none;
 }

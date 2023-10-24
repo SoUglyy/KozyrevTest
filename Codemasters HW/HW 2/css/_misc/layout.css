@@ -42,22 +42,23 @@ body {
 }
 
 .wrapper {
-  z-index: 100;
   position: relative;
   width: 100%;
-  min-width: 118.75rem+1.25rem;
-  /* min-height: 100%; */
   overflow: hidden;
 }
 
+.wrapper--hidden {
+  display: none;
+}
+
+.wrapper__header {
+  margin: 0 auto;
+}
 
 
 .container {
-  position: relative;
-  z-index: 100;
-  width: 95%;
   max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 
@@ -119,6 +120,23 @@ footer {
 
 .link {
   text-decoration: none;
+}
+
+/* Сделай аналогично для других ссылок*/
+.link--activated {
+    color: #AE8AFF;
+}
+
+.link--activated:hover {
+    text-underline: none;
+}
+
+.link--secondary {
+  color: #cdcdcd;
+}
+
+.link--hovering_underline:hover {
+    text-decoration: underline;
 }
 
 .title--h1 {
